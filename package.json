@@ -27,7 +27,7 @@
     "moment": "2.29.1",
     "lodash": "4.17.20",
     "formik": "2.2.9",
-    "yup": "0.32.11"
+    "yup": "1.7.1"
   },
   "devDependencies": {
     "webpack": "4.46.0",
