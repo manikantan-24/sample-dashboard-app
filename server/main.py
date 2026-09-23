@@ -34,5 +34,5 @@ async def get_users():
 @app.post("/api/events")
 async def post_event(payload: EventPayload):
     async with httpx.AsyncClient() as client:
-        r = await client.post(f"{LEGACY_APP_URL}/api/events", json=payload.dict())
+        r = await client.post(f"{LEGACY_APP_URL}/api/events", json=payload.model_dump())
         return r.json()
